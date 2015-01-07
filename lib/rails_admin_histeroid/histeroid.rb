@@ -11,7 +11,7 @@ class RailsAdmin::Histeroid
 
   IGNORED_ATTRS = Set[:_id, :created_at, :created_on, :deleted_at, :updated_at, :updated_on, :deleted_on]
 
-  attr_accessible :message, :item, :table, :username
+  # attr_accessible :message, :item, :table, :username
 
   default_scope order_by(_id: :desc)
 
