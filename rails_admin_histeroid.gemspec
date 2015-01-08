@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency 'rails_admin', '>= 0.1.1'
-  s.add_runtime_dependency 'mongoid', '>= 3.1.0'
+  s.add_runtime_dependency 'rails_admin', '>= 0.6.6'
+  s.add_runtime_dependency 'mongoid', '>= 4.0.0'
 
 end

@@ -13,7 +13,7 @@ class RailsAdmin::Histeroid
 
   # attr_accessible :message, :item, :table, :username
 
-  default_scope order_by(_id: :desc)
+  default_scope -> { order_by(_id: :desc) }
 
   def self.latest
     self.limit(100)
